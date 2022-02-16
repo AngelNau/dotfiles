@@ -51,8 +51,18 @@ set smartcase
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'sainnhe/gruvbox-material'
-Plug 'olimorris/onedarkpro.nvim'
+Plug 'joshdick/onedark.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'neovim/nvim-lspconfig'
+Plug 'vim-airline/vim-airline'
+Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
 
-colorscheme onedarkpro
+lua require('AngelNau')
+
+colorscheme onedark
+
+set completeopt=menu,menuone,noselect
