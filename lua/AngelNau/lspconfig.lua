@@ -1,5 +1,5 @@
 local nvim_lsp = require('lspconfig')
-local servers = { 'jdtls', 'pyright' }
+local servers = { 'jdtls', 'pyright', 'clangd' }
 
 for _, lsp in ipairs(servers) do
 	nvim_lsp[lsp].setup {}

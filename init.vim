@@ -17,6 +17,7 @@ set shiftwidth=4
 
 " adds line numbers
 set number
+set relativenumber
 
 " columns used for the line number
 set numberwidth=4
@@ -57,7 +58,15 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'vim-airline/vim-airline'
-Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'rafamadriz/friendly-snippets'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
